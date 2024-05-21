@@ -201,6 +201,7 @@ export default makeSource({
   contentDirPath: 'data',
   syncFiles: syncContentFromGit,
   documentTypes: [Blog, Authors, Tickets],
+  contentDirExclude: ['.git', 'node_modules'],
   mdx: {
     cwd: process.cwd(),
     remarkPlugins: [
